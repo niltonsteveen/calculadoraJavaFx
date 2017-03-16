@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="444.0" style="-fx-background-color: #041D37;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLEstandarCalculatorController">
+   <children>
+      <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="138.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="400.0" minHeight="10.0" prefHeight="335.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane prefHeight="345.0" prefWidth="450.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="num4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="4" textAlignment="CENTER" textFill="#fcfcfc" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="7" textAlignment="CENTER" textFill="#fcfcfc" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="CE" textAlignment="CENTER" textFill="#fcfcfc" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="←" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="8" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="C" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="x²" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: #3B3176;" text="√" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="1/x" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="±" textAlignment="CENTER" textFill="#fcfcfc" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="operadorSum" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="+" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="3" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="2" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="1" textAlignment="CENTER" textFill="#fcfcfc" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="-" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="6" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="5" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="X" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="9" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="/" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="\%" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="operadorIgual" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #3B3176;" text="=" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="5.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="," textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="num0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#accionRealizada" prefHeight="0.0" prefWidth="99.0" style="-fx-background-color: #738CA6;" text="0" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </GridPane.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="5.0" />
+               </padding>
+            </GridPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textoOperacion" alignment="CENTER_RIGHT" styleClass="textField" stylesheets="@estilos.css" text="0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
