@@ -5,16 +5,16 @@
  */
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDrawer;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javax.swing.JOptionPane;
+import javafx.scene.layout.GridPane;
 
 /**
  * FXML Controller class
@@ -31,7 +31,15 @@ public class FXMLContentViewController implements Initializable {
     private BorderPane paneMain;
     private AnchorPane calculadoraEstandar;
     private Button btnEstadoMain;
+    private boolean isClickedHam;
 
+    public boolean isIsClickedHam() {
+        return isClickedHam;
+    }
+
+    public void setIsClickedHam(boolean isClickedHam) {
+        this.isClickedHam = isClickedHam;
+    }
     public Button getBtnEstadoMain() {
         return btnEstadoMain;
     }
@@ -72,7 +80,6 @@ public class FXMLContentViewController implements Initializable {
     @FXML
     private JFXButton buttonEstandar;
     
-    public BorderPane borderPane;
 
     @FXML
     void iniciarEstandar(ActionEvent event) throws Exception{
