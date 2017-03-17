@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -30,7 +31,7 @@ public class FXMLContentViewController implements Initializable {
     private FXMain main;
     private BorderPane paneMain;
     private AnchorPane calculadoraEstandar;
-    private Button btnEstadoMain;
+    private Label labelEstadoMain;
     private boolean isClickedHam;
 
     public boolean isIsClickedHam() {
@@ -40,14 +41,15 @@ public class FXMLContentViewController implements Initializable {
     public void setIsClickedHam(boolean isClickedHam) {
         this.isClickedHam = isClickedHam;
     }
-    public Button getBtnEstadoMain() {
-        return btnEstadoMain;
+
+    public Label getLabelEstadoMain() {
+        return labelEstadoMain;
     }
 
-    public void setBtnEstadoMain(Button btnEstadoMain) {
-        this.btnEstadoMain = btnEstadoMain;
+    public void setLabelEstadoMain(Label labelEstadoMain) {
+        this.labelEstadoMain = labelEstadoMain;
     }
-    
+   
     
     public AnchorPane getCalculadoraEstandar() {
         return calculadoraEstandar;
@@ -84,8 +86,9 @@ public class FXMLContentViewController implements Initializable {
     @FXML
     void iniciarEstandar(ActionEvent event) throws Exception{
         paneMain.setLeft(null);
-        paneMain.setCenter(calculadoraEstandar);
-        btnEstadoMain.setText(buttonEstandar.getText());
+        paneMain.setCenter(calculadoraEstandar);        
+        
+        labelEstadoMain.setText(buttonEstandar.getText());
     }
 
     

@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -21,7 +22,7 @@ public class FXMLMainController implements Initializable{
     private BorderPane borderPane;
 
     @FXML
-    private JFXButton btnEstado;
+    private Label labelEstado;
     
     @FXML
     private JFXHamburger hamburger;
@@ -52,7 +53,7 @@ public class FXMLMainController implements Initializable{
             contentViewController= loaderGridBox.getController();
             contentViewController.setPaneMain(rootP);
             contentViewController.setCalculadoraEstandar(ap);
-            contentViewController.setBtnEstadoMain(btnEstado);
+            contentViewController.setLabelEstadoMain(labelEstado);
             
         } catch (IOException ex) {
             Logger.getLogger(FXMLMainController.class.getName()).log(Level.SEVERE, null, ex);
