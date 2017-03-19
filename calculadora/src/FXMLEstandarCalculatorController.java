@@ -60,9 +60,13 @@ public class FXMLEstandarCalculatorController implements Initializable {
 
     @FXML    private JFXButton accionModulo;
     
+    @FXML    private JFXButton borrarUltimo;
+    
     @FXML    private JFXButton accionDecimal;
     
     @FXML    private TextField textoOperacion1;
+    
+    @FXML    private JFXButton borrarUltimaEntrada;
     
     @FXML
     void accionRealizada(ActionEvent event) {
@@ -246,16 +250,43 @@ public class FXMLEstandarCalculatorController implements Initializable {
                         txtOp1.delete(0, txtOp1.length());
                     }
                 }     
-                break;
+                break;  
             case "operadorIgual":
-                String texto=utils.getEntrada().toString();
-                int ocurrenciaSuma=texto.indexOf("+");
-                double primerNumero=Double.parseDouble(texto.substring(0,ocurrenciaSuma));
-                double segundoNumero=Double.parseDouble(texto.substring(ocurrenciaSuma+1));
-                double res=utils.sumar(primerNumero, segundoNumero);
-                textoOperacion.setText(String.valueOf(res));
-
-
+               if(!Character.isDigit(utils.getEntrada().charAt(utils.getEntrada().length()-1))){
+                    utils.getEntrada().deleteCharAt(utils.getEntrada().length()-1);
+                    textoOperacion.setText("");
+                    textoOperacion1.setText(String.valueOf(utils.getResultado()));
+                }else if(utils.numOperandos()>0){
+                    int subs=(utils.getEntrada().length())-(txtOp1.length()+1);
+                    utils.operar(txtOp1.toString(), (utils.getEntrada().substring(subs,subs+1)));
+                    textoOperacion.setText("");
+                    textoOperacion1.setText(String.valueOf(utils.getResultado()));
+                    utils.getEntrada().delete(0, utils.getEntrada().length());
+                    utils.getEntrada().append(textoOperacion1.getText());
+                    txtOp1.delete(0, txtOp1.length());
+                }    
+                break;
+                
+            case "borrarUltimo":
+                int longitud=txtOp1.length();
+                int resta=utils.getEntrada().length()-longitud;
+                txtOp1.delete(0, txtOp1.length());
+                textoOperacion1.setText("");
+                utils.getEntrada().delete(resta, utils.getEntrada().length());
+                break;
+                
+            case "borrarTodo":
+                txtOp1.delete(0, txtOp1.length());
+                textoOperacion.setText("");
+                textoOperacion1.setText("");
+                utils.getEntrada().delete(0, utils.getEntrada().length());
+                utils.setResultado(0);
+                break;
+            case "borrarUltimaEntrada":
+                txtOp1.deleteCharAt(txtOp1.length()-1);
+                textoOperacion1.setText(txtOp1.toString());
+                utils.getEntrada().deleteCharAt(utils.getEntrada().length()-1);
+                
         }
         
         

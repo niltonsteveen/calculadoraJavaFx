@@ -80,6 +80,12 @@ public class Utils {
                 }else{
                     resultado=resultado/Double.parseDouble(num);
                 }
+            }else if(operador.equals("*")){
+                if(numOperandos()==1&&!Character.isDigit(entrada.charAt(entrada.length()-1))){
+                    resultado=Double.parseDouble(num)*1;
+                }else{
+                    resultado=resultado*Double.parseDouble(num);
+                }
             }
         }
         
